@@ -9,6 +9,7 @@ public class Calculadora extends JFrame {
     private JButton [] b = new JButton[10]; //botão dos dígitos
     private JButton bponto, bresult, blimpa, bexit; //botão de saída
     private JTextField tela; //tela da calculadora
+    private JLabel cred;
 
     CalculadoraGerenciamento gerencia = new CalculadoraGerenciamento();
 
@@ -53,6 +54,10 @@ public class Calculadora extends JFrame {
         blimpa = new JButton("C"); blimpa.setBounds(50,300,100,25); add(blimpa);
         bexit = new JButton("Quit"); bexit.setBounds(150,300,100,25); add(bexit);
 
+        tela = new JTextField(); tela.setBounds(50,50,200,30); add(tela);
+        cred = new JLabel("Aprender Java é divertido");
+        cred.setBounds(25,325,200,30); add(cred);
+        setLayout(null);
 
     }
 
@@ -97,6 +102,8 @@ public class Calculadora extends JFrame {
                 System.exit(0);
             }
         });
+
+
 
     }
 
