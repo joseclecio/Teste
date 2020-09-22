@@ -9,6 +9,10 @@ public class Calculadora extends JFrame {
 
     CalculadoraGerenciamento gerencia = new CalculadoraGerenciamento();
 
+    public Calculadora(){
+        inicializar();
+        eventos();
+    }
 
 
 }
