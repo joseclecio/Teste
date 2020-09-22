@@ -1,5 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class Calculadora extends JFrame {
 
@@ -55,6 +57,16 @@ public class Calculadora extends JFrame {
     }
 
     public void eventos(){
+
+        for (int i = 0; i<10; i++){
+            final int j = i;
+            b[i].addActionListener(new ActionListener(){
+                public void actionPerformed(ActionEvent e){
+                    tela.setText(tela.getText()+j);
+                    tela.setHorizontalAlignment(JTextField.RIGHT);
+                }
+            });
+        }
 
     }
 
