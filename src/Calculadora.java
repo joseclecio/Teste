@@ -7,6 +7,8 @@ public class Calculadora extends JFrame {
     private JButton bponto, bresult, blimpa, bexit; //botão de saída
     private JTextField tela; //tela da calculadora
 
+    CalculadoraGerenciamento gerencia = new CalculadoraGerenciamento();
+
 
 
 }
