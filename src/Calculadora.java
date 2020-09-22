@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 
 public class Calculadora extends JFrame {
 
@@ -15,6 +16,15 @@ public class Calculadora extends JFrame {
     }
 
     public void inicializar(){
+
+        setTitle("Calculadora");
+        setBounds(200,200,300,400);
+        setBackground(new Color(150,150,150));
+
+        // Adicionando os botões dos dígitos da calculadora
+        b[0] = new JButton("0");
+        b[0].setBounds(50,250,50,25);
+        add(b[0]);
 
     }
 
