@@ -9,9 +9,17 @@ public class Calculadora extends JFrame {
 
     CalculadoraGerenciamento gerencia = new CalculadoraGerenciamento();
 
-    public Calculadora(){
+    public Calculadora(){ //construtor
         inicializar();
         eventos();
+    }
+
+    public void inicializar(){
+
+    }
+
+    public void eventos(){
+
     }
 
 
