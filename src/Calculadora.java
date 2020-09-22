@@ -67,6 +67,36 @@ public class Calculadora extends JFrame {
                 }
             });
         }
+        for (int i = 0; i<4; i++) {
+            final int j = i;
+            bOp[i].addActionListener(new ActionListener(){
+                public void actionPerformed(ActionEvent e){
+                    gerencia.Operacao(j,tela.getText());
+                    tela.setText("");
+                }
+            });
+        }
+        bponto.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent e){
+                tela.setText(tela.getText()+".");
+                tela.setHorizontalAlignment(JTextField.RIGHT);
+            }
+        });
+        bresult.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent e){
+                tela.setText(""+gerencia.Display(tela.getText()));
+            }
+        });
+        blimpa.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent e){
+                tela.setText("");
+            }
+        });
+        bexit.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent e){
+                System.exit(0);
+            }
+        });
 
     }
 
